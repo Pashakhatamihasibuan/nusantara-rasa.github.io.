@@ -1,0 +1,44 @@
+@import "tailwindcss";
+/* Preline UI */
+@import "../../node_modules/preline/variants.css";
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@theme {
+  /* Colors */
+  --color-primary: #de6400;
+  --color-secondary: #202123;
+  --color-ternary: #8f8f8f;
+  --color-white: #fefefe;
+
+  /* Fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-caprasimo: "Caprasimo", cursive;
+}
+
+@font-face {
+  font-family: "Caprasimo";
+  src: url("../fonts/Caprasimo-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}

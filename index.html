@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nusantara Rasa menghadirkan seni kuliner modern dengan sentuhan tradisi Indonesia. Nikmati pengalaman kuliner yang autentik dengan teknik modern yang elegan."
+    />
+    <meta name="keywords" content="kuliner Indonesia, restoran, makanan tradisional, nusantara, makanan modern, chef" />
+    <meta name="author" content="Nusantara Rasa" />
+    <title>Nusantara Rasa - Seni Kuliner Modern dengan Tradisi Indonesia</title>
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/output.css" />
+  </head>
+  <body class="bg-[#FEFEFE]">
+    <!-- header -->
+    <header class="sticky top-0 z-50 bg-white py-3.5 shadow-md">
+      <div class="flex flex-row max-w-6xl mx-auto justify-between items-center px-4 md:px-0">
+        <img src="./src/images/logo.png" alt="Logo Nusantara Rasa - Restoran Kuliner Indonesia" class="w-28 md:w-auto" />
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none hover:cursor-pointer">
+          <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+        <nav class="hidden md:flex flex-row gap-x-8 font-inter">
+          <ul class="flex space-x-8">
+            <li class="font-medium text-primary"><a href="#beranda"> Beranda </a></li>
+            <li class="text-ternary hover:text-primary"><a href="#menu"> Menu </a></li>
+            <li class="text-ternary hover:text-primary"><a href="#cerita-kami"> Cerita Kami </a></li>
+            <li class="text-ternary hover:text-primary"><a href="#galeri"> Galeri </a></li>
+            <li class="text-ternary hover:text-primary"><a href="#kontak"> Kontak </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 md:hidden hover:cursor-pointer">
+        <ul class="flex flex-col space-y-4 text-center">
+          <li><a href="#beranda" class="block py-2 text-primary">Beranda</a></li>
+          <li><a href="#menu" class="block py-2 text-ternary hover:text-primary">Menu</a></li>
+          <li><a href="#cerita-kami" class="block py-2 text-ternary hover:text-primary">Cerita Kami</a></li>
+          <li><a href="#galeri" class="block py-2 text-ternary hover:text-primary">Galeri</a></li>
+          <li><a href="#kontak" class="block py-2 text-ternary hover:text-primary">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="beranda">
+      <div class="-scroll-mt-20 grid md:grid-cols-2 items-center mt-12 px-4 md:px-0">
+        <div class="text-center md:text-left mx-auto">
+          <h1 class="font-caprasimo text-[2.25rem] md:text-4xl text-secondary">
+            Seni Kuliner Modern dengan <br class="hidden md:block" />
+            Sentuhan Tradisi Indonesia
+          </h1>
+        </div>
+        <div><img src="./src/images/gbr-abstract.png" alt="Seni Kuliner Nusantara" class="w-full h-auto object-cover hidden md:block" /></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 px-4 md:px-0">
+        <div>
+          <img src="./src/images/gbr-chef.png" alt="Tim Koki Nusantara Rasa" class="w-full h-auto object-cover" />
+        </div>
+        <div class="p-6 md:p-12 flex items-center">
+          <div>
+            <div class="text-center md:text-left mb-4 md:text-base">
+              <span class="text-secondary font-medium">Selamat Datang di</span> <span class="text-primary font-caprasimo">Nusantara Rasa,</span>
+            </div>
+            <p class="font-inter text-ternary leading-relaxed text-sm md:text-base">
+              Tempat di mana tradisi bertemu inovasi. Kami menghadirkan pengalaman kuliner yang memadukan cita rasa autentik Indonesia dengan teknik modern yang
+              elegan. Setiap hidangan dirancang untuk membawa Anda dalam perjalanan rasa melalui kekayaan rempah, bahan-bahan lokal terbaik, dan kreativitas
+              tanpa batas. Dengan suasana yang hangat dan pelayanan yang prima, Nusantara Rasa bukan sekadar restoran, melainkan sebuah perayaan akan keindahan
+              kuliner Indonesia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <div id="menu" class="bg-secondary text-center p-12 scroll-mt-10">
+        <h2 class="text-white font-caprasimo text-3xl">Menu</h2>
+        <p class="text-ternary font-inter text-base mt-4 leading-relaxed sm:px-1 md:px-[94px]">
+          Jelajahi kelezatan Nusantara Rasa! Dari hidangan utama seperti nasi goreng gurih dan rendang lembut, hingga dessert manis seperti klepon lava dan es
+          teler modern. Nikmati juga minuman khas seperti wedang jahe hangat dan es cendol menyegarkan. Bagi vegetarian, kami menyediakan pilihan sehat berbahan
+          sayuran segar.
+        </p>
+      </div>
+
+      <div class="relative overflow-hidden w-full h-full">
+        <div id="carousel" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+          <div class="w-1/2 flex flex-col">
+            <img src="./src/images/gbr-makanan-1.png" class="h-1/2 object-cover" alt="Restaurant" />
+            <img src="./src/images/gbr-accesories-menu.png" class="h-1/2 object-cover" alt="Chef" />
+          </div>
+          <div class="w-1/2 overflow-hidden">
+            <img id="carouselImage" src="./src/images/gbr-chef-menu.png" class="w-full h-full object-cover" alt="Food" />
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-nasigoreng-kampung.png" alt="Makanan 2" class="w-full h-60 object-cover" />
+          <h3 class="text-lg mt-2 font-caprasimo text-primary">Nasi Goreng Kampung</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 85.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-rendang-padang.png" alt="Makanan 1" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Rendang Padang</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 120.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-sate-ayam.png" alt="Makanan 3" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Sate Ayam Madura</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 75.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gambar-sop-buntut-bakar.png" alt="Minuman 1" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Sop Buntut Bakar</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 140.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-ayam-betutu.png" alt="Minuman 2" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Ayam Betutu Bali</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 135.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-gurame-asam-manis.png" alt="Minuman 3" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Gurame Asam Manis</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 160.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-gado-gado-jakarta.png" alt="Minuman 3" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Gado-gado Jakarta</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 70.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-esteler.png" alt="Minuman 3" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Es Teler Spesial</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 55.000</p>
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-gurame-asam-manis.png" alt="Minuman 3" class="w-full h-60 object-cover" />
+          <h3 class="text-lg font-caprasimo text-primary mt-2">Pisang Goreng Keju</h3>
+          <p class="text-base font-medium font-caprasimo text-secondary">IDR 50.000</p>
+        </div>
+      </div>
+
+      <!-- Cerita Kami -->
+      <div id="cerita-kami" class="bg-secondary text-center p-12 scroll-mt-10">
+        <h2 class="text-white font-caprasimo text-3xl">Cerita Kami</h2>
+        <p class="text-ternary font-inter text-base mt-4 leading-relaxed sm:px-1 md:px-[94px]">
+          Di Nusantara Rasa, kami percaya bahwa setiap hidangan adalah sebuah cerita. Cerita tentang tanah, budaya, dan warisan kuliner Indonesia. Tim kami
+          terdiri dari koki-koki berbakat yang berdedikasi untuk menciptakan pengalaman makan yang tak terlupakan. Dengan menggunakan bahan-bahan terbaik dari
+          petani dan nelayan lokal, kami menghadirkan rasa yang autentik namun tetap inovatif. Mari bergabung dengan kami dalam merayakan keindahan kuliner
+          Indonesia.
+        </p>
+      </div>
+
+      <div class="relative overflow-hidden w-full h-full">
+        <div id="carousel" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+          <div class="w-1/2 overflow-hidden">
+            <img id="carouselImage" src="./src/images/gbr-accesories-1.png" class="w-full h-full object-cover" alt="Food" />
+          </div>
+          <div class="w-1/2 flex flex-col">
+            <img src="./src/images/gbr-makanan-2.png" class="h-1/2 object-cover" alt="Restaurant" />
+            <img src="./src/images/gbr-accesories-about.png" class="h-1/2 object-cover" alt="Chef" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeri -->
+      <div  id="galeri" class="bg-secondary text-center p-12  scroll-mt-10">
+        <h2 class="text-white font-caprasimo text-3xl">Galeri</h2>
+        <p class="text-ternary font-inter text-base mt-4 leading-relaxed sm:px-1 md:px-[94px]">
+          Jelajahi kelezatan hidangan utama kami yang menggugah selera. Dari nasi goreng yang gurih hingga rendang yang lembut, setiap hidangan dibuat dengan
+          cinta dan bahan-bahan terbaik.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-cheff.png" alt="Makanan 2" class="w-full h-60 object-cover" />
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-room1.png" alt="Makanan 1" class="w-full h-60 object-cover" />
+
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-room2.png" alt="Makanan 3" class="w-full h-60 object-cover" />
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-doll.png" alt="Makanan 2" class="w-full h-60 object-cover" />
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-adm.png" alt="Makanan 1" class="w-full h-60 object-cover" />
+
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-vegetables.png" alt="Makanan 3" class="w-full h-60 object-cover" />
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-room3.png" alt="Makanan 2" class="w-full h-60 object-cover" />
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-room4.png" alt="Makanan 1" class="w-full h-60 object-cover" />
+
+        </div>
+        <div class="bg-white p-4">
+          <img src="./src/images/gbr-room5.png" alt="Makanan 3" class="w-full h-60 object-cover" />
+        </div>
+    </main>
+
+    <footer class=" text-white pt-7">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Tentang Kami -->
+        <div>
+          <h3 class="text-xl font-caprasimo text-primary mb-4">Tentang Kami</h3>
+          <p class="text-sm text-ternary">
+            Nusantara Rasa menghadirkan seni kuliner modern dengan sentuhan tradisi Indonesia. Nikmati pengalaman kuliner yang autentik dengan teknik modern yang elegan.
+          </p>
+        </div>
+    
+        <!-- Navigasi -->
+        <div>
+          <h3 class="text-xl font-caprasimo text-primary mb-4">Navigasi</h3>
+          <ul class="space-y-2">
+            <li><a href="#beranda" class="text-ternary hover:text-primary">Beranda</a></li>
+            <li><a href="#menu" class="text-ternary hover:text-primary">Menu</a></li>
+            <li><a href="#cerita-kami" class="text-ternary hover:text-primary">Cerita Kami</a></li>
+            <li><a href="#galeri" class="text-ternary hover:text-primary">Galeri</a></li>
+            <li><a href="#kontak" class="text-ternary hover:text-primary">Kontak</a></li>
+          </ul>
+        </div>
+    
+        <!-- Formulir Kontak -->
+        <div id="kontak">
+          <h3 class="text-xl font-caprasimo text-primary mb-4 scroll-mt-10">Hubungi Kami</h3>
+          <form class="space-y-4">
+            <input type="text" placeholder="Nama" class="w-full px-4 py-2 bg-ternary text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input type="email" placeholder="Email" class="w-full px-4 py-2 bg-ternary text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+            <textarea placeholder="Pesan" class="w-full px-4 py-2 bg-ternary text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+            <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg hover:bg-opacity-80">Kirim</button>
+          </form>
+        </div>
+      </div>
+    
+      <div class="mt-12 bg-secondary text-center p-5 text-sm text-gray-300 ">
+        &copy; 2025 <span class="font-caprasimo text-primary">Nusantara Rasa</span>. All Rights Reserved.
+      </div>
+    </footer>
+    
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

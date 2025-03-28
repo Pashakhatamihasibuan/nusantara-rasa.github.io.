@@ -1,0 +1,19 @@
+{
+  "name": "tailwindcss-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/styles/global.css -o ./src/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "@tailwindcss/typography": "^0.5.16",
+    "preline": "^3.0.1",
+    "tailwindcss": "^4.0.14"
+  }
+}
